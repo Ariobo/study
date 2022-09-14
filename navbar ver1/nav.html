@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2e01103920.js" crossorigin="anonymous"></script>
+    <style>
+        li{
+            list-style:none;
+        }
+        .navbar-box{
+            border-bottom: solid 0.8px black;
+        }
+        .navbar-ul{
+            display: flex;
+            margin: 0px 50px 15px 50px;
+            padding-left: 0px;
+        }
+        .css-logo a img{
+            width: 10rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+        }
+        .css-text{
+            display: flex;
+            align-items: center;
+            height: 3rem;
+            margin-left: 1.5rem;
+            
+        }
+        .navbar-atext{
+            text-decoration: none;
+            color: black;
+            opacity: 0.8;
+        }
+
+        .css-textweb{
+            margin-right: 0.8rem;
+        }
+
+        .navbar-divicon #fuck{
+            position: absolute;
+            opacity: .65;
+            margin: 10px 0px 0px 7px; 
+        }
+
+        .navbar-divicon input{
+            height: 1.5rem;
+            width: 15rem;
+            padding: 4px 10px 4px 2rem ;
+        }
+
+        .css-search{
+            margin: 0 0 0 auto;
+        }
+
+        .navbar-divicon a{
+            text-decoration: none;
+        }
+
+        .navbar-atext img{
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            margin-right: 0.8rem;
+            display: flex;
+            align-items: center;
+        }
+
+        #haha{
+            display: none;
+            color: black;
+            opacity: 0.65;
+            margin-top: 5px;
+        }
+
+        @media screen and (max-width: 930px) {
+            .navbar-divicon input {
+                display: none;
+                transition: 0.5s ease-in-out;
+                transform: scale(0.3) translate(-100%,-100%);
+            }
+            #fuck{
+                display: none;
+            }
+            #haha{
+                display:block;
+            }
+        }
+        @media screen and (max-width: 670px) {
+            .navbar-ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .navbar-atext{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+                height: 3rem;
+                align-items: center;
+            }
+            .css-textweb{
+                margin-right: 0px;
+            }
+            .css-hidden{
+                display: none;
+            }
+            #haha{
+                display: none;
+            }
+            .navbar-li{
+                margin-left: 0px;
+            }
+            .css-search{
+                height: 0px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar-box">
+        <ul class="navbar-ul">
+            <li class="navbar-li css-logo">
+                <a>
+                    <img src="1.jpg">
+                </a>
+            </li>
+            <li class="navbar-li css-text">
+                <a href="" class="navbar-atext">영화</a>
+            </li>
+            <li class="navbar-li css-text">
+                <a href="" class="navbar-atext">TV</a>
+            </li>
+            <li class="navbar-li css-text">
+                <a href="" class="navbar-atext">책</a>
+            </li>
+            <li class="navbar-li css-text css-textweb">
+                <a href="" class="navbar-atext">웹툰</a>
+            </li>
+            <li class="navbar-li css-text css-search">
+                <form action="#">
+                    <div class="navbar-divicon">
+                        <i class="fas fa-search" id="fuck"></i>
+                        <input type="text" placeholder="콘텐츠, 인물, 컬렉션를 검색해보세요">
+                        <a href=""><i class="fas fa-search" id="haha"></i></a>
+                    </div>
+                </form>
+            </li>
+            <li class="navbar-li css-text css-hidden">
+                <a href="" class="navbar-atext">평가하기</a>
+            </li>
+            <li class="navbar-li css-text css-hidden">
+                <a href="" class="navbar-atext">
+                    <img src="1.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
