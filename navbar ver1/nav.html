@@ -4,33 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2e01103920.js" crossorigin="anonymous"></script>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-family: 'Noto Sans KR', sans-serif;
+            height: 400vh;
+        }
         li{
             list-style:none;
         }
         .navbar-box{
             border-bottom: solid 0.8px black;
+            position: fixed;
+            width: 100%;
+            margin-top:0.5rem;
         }
         .navbar-ul{
             display: flex;
             margin: 0px 50px 15px 50px;
             padding-left: 0px;
         }
-        .css-logo a img{
+
+        .css-logo{
             width: 10rem;
-            height: 3rem;
-            display: flex;
-            align-items: center;
+            height: 2.0625rem;
         }
+        
+        #logo{
+            margin-top: 7px;
+        }
+
         .css-text{
             display: flex;
             align-items: center;
             height: 3rem;
             margin-left: 1.5rem;
-            
         }
+
         .navbar-atext{
             text-decoration: none;
             color: black;
@@ -41,16 +59,19 @@
             margin-right: 0.8rem;
         }
 
+
         .navbar-divicon #fuck{
             position: absolute;
             opacity: .65;
-            margin: 10px 0px 0px 7px; 
+            margin: 8px 0px 0px 7px;
         }
 
         .navbar-divicon input{
-            height: 1.5rem;
-            width: 15rem;
+            height: 2rem;
+            width: 18rem;
             padding: 4px 10px 4px 2rem ;
+            background-color: rgb(243, 243, 243);
+            border: 0px solid;
         }
 
         .css-search{
@@ -128,7 +149,7 @@
         <ul class="navbar-ul">
             <li class="navbar-li css-logo">
                 <a>
-                    <img src="1.jpg">
+                    <img src="watcha.png" id="logo">
                 </a>
             </li>
             <li class="navbar-li css-text">
@@ -147,7 +168,7 @@
                 <form action="#">
                     <div class="navbar-divicon">
                         <i class="fas fa-search" id="fuck"></i>
-                        <input type="text" placeholder="콘텐츠, 인물, 컬렉션를 검색해보세요">
+                        <input type="text" placeholder="콘텐츠, 인물, 컬렉션를 검색해보세요.">
                         <a href=""><i class="fas fa-search" id="haha"></i></a>
                     </div>
                 </form>
@@ -157,10 +178,11 @@
             </li>
             <li class="navbar-li css-text css-hidden">
                 <a href="" class="navbar-atext">
-                    <img src="1.jpg" alt="">
+                    <img src="" alt="">
                 </a>
             </li>
         </ul>
     </nav>
+    <a href="">asdasd</a>
 </body>
 </html>
