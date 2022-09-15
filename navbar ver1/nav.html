@@ -98,6 +98,14 @@
             margin-top: 5px;
         }
 
+        .navbar-bars{
+            position: absolute;
+            right: 1.875rem;
+            display: none;
+            top: 0.45rem;
+            font-size: 1.5rem;
+        }
+
         @media screen and (max-width: 930px) {
             .navbar-divicon input {
                 display: none;
@@ -139,6 +147,12 @@
             }
             .css-search{
                 height: 0px;
+            }
+            .navbar-bars{
+                display: block;
+            }
+            .navbar-box.active{
+                display: flex;
             }
         }
         
@@ -182,7 +196,18 @@
                 </a>
             </li>
         </ul>
+        <a class="navbar-bars">
+            <i class="fas fa-bars"></i>
+        </a>
     </nav>
-    <a href="">asdasd</a>
 </body>
+<script>
+    const navbarBox=document.querySelector('.navbar-box');
+    const navbarBars=document.querySelector('.navbar-bars')
+
+    navbarBox.addEventListener("click",()=>{
+        navbarBars.classList.toggle('active');
+    });
+
+</script>
 </html>
